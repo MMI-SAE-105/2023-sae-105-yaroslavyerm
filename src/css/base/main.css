@@ -1,10 +1,28 @@
 h1{
     font-size: var(--titre);
     font-family: 'Bebas Neue', sans-serif;
-    font-weight: 400;
+    font-weight: bold;
     color: var(--charcoal);
     text-align: left;
 }
 img{
     max-width: 100%;
+}
+h2{
+    font-size: var(--sous-titre-1);
+    font-family: 'montserrat', sans-serif;
+    text-align: left;
+    font-weight: bold;
+}
+h3{
+    font-size: var(--sous-titre-2);
+    font-family: 'montserrat', sans-serif;
+    text-align: left;
+    font-weight: bold;
+}
+p{
+    font-size: var(--texte);
+    font-family: 'montserrat', sans-serif;
+    text-align: left;
+    font-weight: regular;
 }
