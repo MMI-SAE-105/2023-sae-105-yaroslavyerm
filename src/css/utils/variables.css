@@ -1,0 +1,13 @@
+:root{
+    /* Color styles */
+        --charcoal: rgba(69, 69, 67, 1);
+        --smoke: rgba(245, 245, 245, 1);
+        --brick: rgba(159, 69, 52, 1);
+    
+        /* Text-size styles */
+        --titre: 60px;
+        --sous-titre-1: 30px;
+        --texte: 20px;
+        --petit-texte: 15px;
+        --sous-titre-2: 25px;
+}
