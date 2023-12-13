@@ -1,3 +1,10 @@
-.h1{
-    
+h1{
+    font-size: var(--titre);
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    color: var(--charcoal);
+    text-align: left;
+}
+img{
+    max-width: 100%;
 }
