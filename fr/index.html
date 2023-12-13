@@ -1,16 +1,28 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{menuIsOpen: false}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kahn : Forme et Fonction</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
     <link rel="alternate" hreflang="fr" href="https://sae105.yermakov.fr/fr/" />
     <link rel="alternate" hreflang="en" href="https://sae105.yermakov.fr/en/" />
 </head>
 <body>
     <header>
         <button><img src="/public/img/Menu.svg" alt="menu"></button>
+        <nav id="mainNav" x-show="menuIsOpen">
+            <button><img src="/public/img/close.svg" alt="close"></button>
+            <h1>Menu</h1>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">L'exposition</a></li>
+                <li><a href="#">Louis Kahn</a></li>
+                <li><a href="#">Ses oeuvres</a></li>
+                <li><a href="#">Contactez-nous</a></li>
+            </ul>
+        </nav>
         <h1>Kahn : Forme et Fonction</h1>
         <img src="/public/img/picture_header.webp" alt="header">
     </header>
