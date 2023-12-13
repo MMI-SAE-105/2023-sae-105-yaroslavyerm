@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kahn : Forme et Fonction</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="/src/css/style.css">
     <link rel="alternate" hreflang="fr" href="https://sae105.yermakov.fr/fr/" />
     <link rel="alternate" hreflang="en" href="https://sae105.yermakov.fr/en/" />
 </head>
 <body>
-    <header>
-        <button aria-controls="mainNav" @click="menuIsOpen = true">
+    <header class="header header--home">
+        <button class="header__button" aria-controls="mainNav" @click="menuIsOpen = true">
             <img src="/public/img/Menu.svg" alt="menu"></button>
         <nav id="mainNav" x-show="menuIsOpen">
             <button aria-controls="mainNav" @click="menuIsOpen = false">
                 <img src="/public/img/close.svg" alt="close"></button>
-            <h1>Menu</h1>
+            <h2>Menu</h2>
             <ul>
                 <li><a href="#">Accueil</a></li>
                 <li><a href="#">L'exposition</a></li>
@@ -30,7 +31,7 @@
     </header>
     <main>
         <section>
-            <h1>Découvrez l'Héritage</h1>
+            <h2>Découvrez l'Héritage</h2>
             <p>Explorez l'architecture novatrice et les conceptions
                 visionnaires de Louis Kahn à notre exposition. Partez pour
                 un voyage à travers la vie et l'œuvre de cet architecte
@@ -42,7 +43,7 @@
             </button>
         </section>
         <section>
-            <h1>Démystifier le Génie</h1>
+            <h2>Démystifier le Génie</h2>
             <p>Plongez dans la vie et la philosophie de Louis Kahn,
                 maître de la forme et de la fonction. Découvrez l'homme
                 derrièreles structures emblématiques, ses inspirations et
@@ -54,7 +55,7 @@
             </button>
         </section>
         <section>
-            <h1>Créations Iconiques</h1>
+            <h2>Créations Iconiques</h2>
             <p>Plongez dans la vie et la philosophie de Louis Kahn, 
                 maître de la forme et de la fonction. Découvrez l'homme 
                 derrière les structures emblématiques, ses inspirations 
@@ -67,7 +68,7 @@
         </section>
     </main>
     <footer>
-        <h1>Besoin d'aide?</h1>
+        <h2>Besoin d'aide?</h2>
         <button>Contactez-nous</button>
         <p>+33 01 23 45 67</p>
         <p><a href="mailto:expo@gmail.com">expo@gmail.com</a></p>
