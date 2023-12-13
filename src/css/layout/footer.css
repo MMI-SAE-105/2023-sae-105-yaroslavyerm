@@ -5,10 +5,10 @@
 }
 
 .footer__title{
-
     color: var(--smoke);
     margin:0;
-    margin-left: 25px;
+    margin-top: 3px;
+    margin-left: 15px;
     display: inline-block;
 }
 
@@ -17,7 +17,7 @@
     height: 2px;
     background-color: var(--smoke);
     display: block;
-    margin-left: 25px;
+    margin-left: 15px;
     margin-top: 3px;
     margin-bottom: 0;
 }
