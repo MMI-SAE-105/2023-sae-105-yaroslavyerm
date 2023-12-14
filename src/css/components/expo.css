@@ -1,8 +1,61 @@
 .expo__intro{
-    padding: 35px 25px;
+    padding: 25px 25px;
     background-color: var(--charcoal);
 }
 
 .expo__intro__text{
     margin: 0;
 }
+
+.expo__when{
+    margin: 0;
+    background-color: var(--brick);
+    padding: 25px 25px;
+}
+
+.expo__when__title{
+    margin: 0;
+    margin-bottom: 3px;
+    color: var(--smoke);
+}
+
+.expo__when__line{
+    width: 124px;
+        height: 2px;
+        background-color: var(--smoke);
+        display: block;
+        margin: 0;
+        margin-bottom: 15px;
+}
+
+.expo__when__text{
+    margin: 0 15px;
+    margin-bottom: 12px;
+    color: var(--smoke);
+}
+
+.expo__when__subheading{
+    margin: 0;
+    margin-bottom: 11px;
+    color: var(--smoke);
+}
+
+.expo__when__list{
+    margin: 0;
+    padding: 0;
+    color: var(--smoke);
+    font-family: Montserrat, sans-serif;
+    font-size:var(--texte);
+    list-style: none;
+    text-align: center;
+}
+
+.expo__when__item{
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.expo__when__item:nth-last-child(1){
+    margin-bottom: 0;
+}
+

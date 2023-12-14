@@ -13,13 +13,15 @@ h2{
     font-family: 'montserrat', sans-serif;
     text-align: left;
     font-weight: bold;
-    margin-left: 15px;
+    margin:0;
+    
 }
 h3{
     font-size: var(--sous-titre-2);
     font-family: 'montserrat', sans-serif;
     text-align: left;
     font-weight: bold;
+    margin:0;
 }
 p{
     font-size: var(--texte);
@@ -27,6 +29,8 @@ p{
     text-align: left;
     font-weight: normal;
     color: var(--smoke);
+    margin: 0;
+    margin-bottom: 20px;
 }
 
 .noscroll, .noscroll body {
