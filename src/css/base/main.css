@@ -27,3 +27,7 @@ p{
     text-align: left;
     font-weight: regular;
 }
+
+.noscroll, .noscroll body {
+    overflow: hidden;
+}
