@@ -6,6 +6,14 @@
     border: none;
     padding: 25px 20px; 
 }
+.header__title--home{
+    margin-top: 60%;
+    margin-left: 1rem;
+    width: 263px;
+    text-align: left;
+    align-self: flex-start;
+    margin-bottom: 295.5px;
+}
 .header__title{
     margin-top: 60%;
     margin-left: 1rem;
@@ -16,9 +24,27 @@
 }
 
 .header__image{
+    height: 640px;
     max-width: 100%;
     position: absolute;
     top: 0; left: 0;
+    z-index: -2;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--smoke);
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.header__image--home{
+    height: 640px;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: -2;
     content: "";
     display: block;
