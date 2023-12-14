@@ -3,7 +3,7 @@
 }
 
 .arch__intro__text {
-    margin: 0;
+    margin: 0 25px;
 }
 
 .arch__estonie{
@@ -11,15 +11,93 @@
 }
 
 .arch__estonie__title{
+    margin-left: 25px;
     color: var(--smoke);
     margin-bottom: 20px;
 }
 
 .arch__estonie__text{
+    margin: 0 25px;
     color: var(--smoke);
     margin-bottom: 20px;
 }
 
-.arch__estonie__img{
-    margin: 0 -25px -25px;
+.arch__yale{
+    background-color: var(--smoke);
+}
+
+.arch__yale__title{
+    margin-left: 25px;
+    color: var(--charcoal);
+    margin-bottom: 20px;
+}
+
+.arch__yale__text{
+    margin: 0 25px;
+    color: var(--charcoal);
+    margin-bottom: 20px;
+}
+
+.arch__light{
+    background-color: var(--charcoal);
+}
+
+.arch__light__title{
+    margin-left: 25px;
+    color: var(--smoke);
+    margin-bottom: 20px;
+}
+
+.arch__light__text{
+    margin: 0 25px;
+    color: var(--smoke);
+    margin-bottom: 20px;
+}
+
+.arch__legacy{
+    background-color: var(--smoke);
+}
+
+.arch__legacy__title{
+    margin-left: 25px;
+    color: var(--charcoal);
+    margin-bottom: 20px;
+}
+
+.arch__legacy__text{
+    margin: 0 25px;
+    color: var(--charcoal);
+    margin-bottom: 20px;
+}
+
+.arch__discover{
+    background-color: var(--charcoal);
+}
+
+.arch__discover__title{
+    margin-left: 25px;
+    color: var(--smoke);
+    margin-bottom: 20px;
+}
+
+.arch__discover__link {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0;
+    justify-content: space-between;
+    max-width: 100%;
+    height: 80px;
+    font-size: var(--texte);
+    color: var(--smoke);
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    border: 1.5px solid var(--smoke, #F5F5F5);
+
+}
+
+.arch__discover__link__text {
+    max-width: 100%;
+    margin: 26px 0;
+    margin-left: 35px;
+    vertical-align: middle;
 }
