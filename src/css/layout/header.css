@@ -1,5 +1,5 @@
 .header{
-    
+    margin-bottom: 0;
 }
 .header__button{
     background: none;
@@ -12,7 +12,7 @@
     width: 263px;
     text-align: left;
     align-self: flex-start;
-    margin-bottom: 440px;
+    margin-bottom: 295.5px;
 }
 
 .header__image{
