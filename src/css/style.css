@@ -12,7 +12,8 @@
 @import "layout/section.css";
 
 /* Règles composants */
-@import "components/section__home.css";
+@import "components/home.css";
 @import "components/menu.css";
 @import "components/expo.css";
 @import "components/arch.css";
+@import "components/buildings.css";

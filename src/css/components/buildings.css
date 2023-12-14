@@ -1,0 +1,25 @@
+.buildings__intro{
+    background-color: var(--charcoal);
+}
+
+.buildings__intro__text{
+    margin: 0 25px;
+}
+
+.buildings__tiles{
+    background-color: var(--brick);
+}
+
+.buildings__tiles__title{
+    margin-left: 25px;
+    color: var(--smoke);
+    margin-bottom: 20px;
+}
+
+.buildings__tiles__gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    margin: 0 15px;
+}
