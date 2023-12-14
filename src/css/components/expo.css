@@ -8,10 +8,8 @@
 }
 
 .expo__when{
-    margin: 0;
     background-color: var(--brick);
-    padding: 25px 25px;
-}
+    }
 
 .expo__when__title{
     margin: 0;
@@ -60,9 +58,7 @@
 }
 
 .expo__where{
-    margin: 0;
     background-color: var(--smoke);
-    padding: 25px 25px;
 }
 .expo__where__title{
     margin: 0;
@@ -93,9 +89,7 @@
 }
 
 .expo__howmuch{
-    margin: 0;
     background-color: var(--charcoal);
-    padding: 25px 25px;
     color: var(--smoke);
 }
 
@@ -149,5 +143,5 @@
     max-width: 100%;
         margin: 26px 0;
         margin-left: 35px;
-        vertical-align: middle;
+        vertical-align: midd
 }

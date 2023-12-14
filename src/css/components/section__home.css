@@ -2,6 +2,8 @@
     padding-top: 1rem;
     padding-bottom: 35px;
     color: var(--smoke, #F5F5F5);
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .expo{
