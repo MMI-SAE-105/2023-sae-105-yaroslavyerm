@@ -81,3 +81,7 @@
     color: var(--charcoal);
     border: 1.5px solid var(--charcoal);
 }
+
+.building__link__text{
+    color: var(--charcoal);
+}

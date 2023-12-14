@@ -25,7 +25,8 @@ p{
     font-size: var(--texte);
     font-family: 'montserrat', sans-serif;
     text-align: left;
-    font-weight: regular;
+    font-weight: normal;
+    color: var(--smoke);
 }
 
 .noscroll, .noscroll body {

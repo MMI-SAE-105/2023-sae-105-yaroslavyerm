@@ -1,0 +1,8 @@
+.expo__intro{
+    padding: 35px 25px;
+    background-color: var(--charcoal);
+}
+
+.expo__intro__text{
+    margin: 0;
+}
