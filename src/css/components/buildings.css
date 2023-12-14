@@ -23,3 +23,34 @@
     gap: 10px;
     margin: 0 15px;
 }
+
+.buildings__tiles__link{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.buildings__timeline{
+    background-color: var(--smoke);
+}
+
+.buildings__timeline__title{
+    margin-left: 25px;
+    color: var(--charcoal);
+    margin-bottom: 20px;
+}
+
+.buildings__timeline__list{
+    margin: 0 25px;
+    color: var(--charcoal);
+    margin-bottom: 20px;
+}
+
+.buildings__timeline__item{
+    margin-bottom: 20px;
+}
+
+.buildings__timeline__text{
+    color: var(--charcoal);
+    margin-bottom: 20px;
+}
