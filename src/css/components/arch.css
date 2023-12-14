@@ -8,5 +8,18 @@
 
 .arch__estonie{
     background-color: var(--brick);
-    
+}
+
+.arch__estonie__title{
+    color: var(--smoke);
+    margin-bottom: 20px;
+}
+
+.arch__estonie__text{
+    color: var(--smoke);
+    margin-bottom: 20px;
+}
+
+.arch__estonie__img{
+    margin: 0 -25px -25px;
 }
