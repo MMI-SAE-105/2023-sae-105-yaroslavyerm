@@ -35,7 +35,7 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 0;
     justify-content: space-between;
-    width: 100%;
+    max-width: 100%;
     height: 80px;
     font-size: var(--texte);
     color: var(--smoke);
@@ -67,4 +67,17 @@
 
 .building{
     background-color: var(--smoke);
+}
+
+.building__title{
+    color: var(--charcoal);
+}
+
+.building__text{
+    color: var(--charcoal);
+}
+
+.building__link{
+    color: var(--charcoal);
+    border: 1.5px solid var(--charcoal);
 }
