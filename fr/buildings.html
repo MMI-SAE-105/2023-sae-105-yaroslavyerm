@@ -7,14 +7,46 @@
     <title>Ses oeuvres</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
     <link rel="stylesheet" href="/src/css/style.css">
-    <link rel="alternate" hreflang="fr" href="https://sae105.yermakov.fr/fr/expo" />
-    <link rel="alternate" hreflang="en" href="https://sae105.yermakov.fr/en/expo" />
+    <link rel="alternate" hreflang="fr" href="https://sae105.yermakov.fr/fr/buildings" />
+    <link rel="alternate" hreflang="en" href="https://sae105.yermakov.fr/en/buildings" />
 </head>
 
 <body>
-    <header></header>
+    <header class="header">
+        <button class="header__button" aria-controls="mainNav" @click="menuIsOpen = true">
+            <img src="/public/img/Menu.svg" alt="menu"></button>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+            <button class="menu__button" aria-controls="mainNav" @click="menuIsOpen = false">
+                <img src="/public/img/close.svg" alt="close"></button>
+            <h1 class="menu__title">Menu</h1>
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__item__link" href="/fr/index.html">Accueil</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/fr/expo.html">L'exposition</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/fr/arch.html">Louis Kahn</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/fr/buildings.html">Ses oeuvres</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/fr/contact.html">Contactez-nous</a></li>
+            </ul>
+        </nav>
+        <h1 class="header__title">Ses oeuvres</h1>
+        <img class="header__image" src="/public/img/header_bd.webp" alt="header">
+    </header>
     <main></main>
-    <footer></footer>
+    <footer class="footer">
+        <h3 class="footer__title">Besoin d'aide?</h3>
+        <span class="footer__line"></span>
+        <a class="footer__link" href="/fr/contact.html">
+            <p class="footer__link__text">Contactez-nous</p>
+        </a>
+        <p class="footer__tel">+33 01 23 45 67</p>
+        <a class="footer__mail" href="mailto:expo@gmail.com">expo@gmail.com</a>
+        <h3 class="footer__title">Suivez-nous</h3>
+        <span class="footer__line"></span>
+        <div class="footer__socials">
+            <a class="footer__icon" href="#"><img class="footer__icon--img" src="/public/img/Instagram.svg" alt="instagram"></a>
+            <a class="footer__icon" href="#"><img class="footer__icon--img" src="/public/img/Facebook.svg" alt="facebook"></a>
+            <a class="footer__icon" href="#"><img class="footer__icon--img" src="/public/img/YouTube.svg" alt="youtube"></a>
+        </div>
+    </footer>
 </body>
 
 </html>
