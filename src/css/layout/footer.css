@@ -25,10 +25,6 @@
 .footer__link{
     color: var(--Smoke);
     text-decoration: none;
-}
-.footer__button{
-    position: relative;
-    top: 12px;
     background-color: var(--brick);
     border: 1px solid var(--smoke);
     border-radius: 5px;
@@ -36,11 +32,17 @@
     width: calc(100% - 40px);
     display: block;
     margin: auto;
+    margin-top: 9px;
+    margin-bottom: 14px;
     padding: 0;
+}
+
+.footer__link__text{
     text-align: center;
     color: var(--smoke);
     font-size: var(--texte);
     font-family: 'montserrat', sans-serif;
+    padding-top: 8px;
 }
 
 .footer__tel{
@@ -48,7 +50,7 @@
     color: var(--smoke);
     margin: 0;
     margin-left: 25px;
-    margin-top: 28px;
+    margin-top: 14px;
     margin-bottom: 0;
 }
 
