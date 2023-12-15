@@ -18,40 +18,34 @@
                 <img src="/public/img/close.svg" alt="close"></button>
             <h1 class="menu__title">Menu</h1>
             <ul class="menu__list">
-                <li class="menu__item"><a class="menu__item__link" href="/fr/index.html">Accueil</a></li>
-                <li class="menu__item"><a class="menu__item__link" href="/fr/expo.html">L'exposition</a></li>
-                <li class="menu__item"><a class="menu__item__link" href="/fr/arch.html">Louis Kahn</a></li>
-                <li class="menu__item"><a class="menu__item__link" href="/fr/buildings.html">Ses oeuvres</a></li>
-                <li class="menu__item"><a class="menu__item__link" href="/fr/contact.html">Contactez-nous</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/en/index.html">Home</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/en/expo.html">Exposition</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/en/arch.html">Louis Kahn</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/en/buildings.html">His works</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/en/contact.html">Contact us</a></li>
             </ul>
             <div class="menu__lang">
-                <a class="menu__lang--active" href="/en/building1.html">English</a>
-                <a class="menu__lang--inactive" href="/fr/building1.html">Français</a>
+                <a class="menu__lang--inactive" href="/en/index.html">English</a>
+                <a class="menu__lang--active" href="/fr/index.html">Français</a>
             </div>
         </nav>
-        <h1 class="header__title title--bd1">Salk Institute</h1>
-        <img class="header__image" src="/public/img/header_bd1.webp" alt="header">
+        <h1 class="header__title--home">Salk Institute</h1>
+        <img class="header__image--home" src="/public/img/picture_header.webp" alt="header">
     </header>
     <main>
         <section class="bd__intro">
-            <p class="bd__intro__text">Niché sur les falaises côtières de La Jolla, en Californie, le Salk Institute for Biological Studies, conçu par
-            l'architecte Louis Kahn en 1965, se dresse comme un phare de l'exploration scientifique. Cet établissement de recherche
-            emblématique symbolise l'innovation et la poursuite intellectuelle dans le domaine des études biologiques.</p>
+            <p class="bd__intro__text">Nestled on the coastal cliffs of La Jolla, California, the Salk Institute for Biological Studies, designed by architect Louis Kahn in 1965, stands as a beacon of scientific exploration. This iconic research institution symbolizes innovation and intellectual pursuit in the field of biological studies.</p>
         </section>
         <section class="bd__main">
-            <h2 class="bd__main__title">Brillance Architecturale</h2>
-            <p class="bd__main__text">Témoignage du génie de Kahn, le Salk Institute se distingue par sa symétrie, son esthétique minimaliste et ses détails
-            méticuleux. Le complexe comprend deux bâtiments en miroir séparés par une cour offrant une vue sur l'océan.</p>
+            <h2 class="bd__main__title">Architectural Brilliance</h2>
+            <p class="bd__main__text">A testament to Kahn's genius, the Salk Institute stands out with its symmetry, minimalist aesthetics, and meticulous details. The complex consists of two mirrored buildings separated by a courtyard that offers a view of the ocean.</p>
             <img class="bd__main__img" src="/public/img/img1_bd1.webp" alt="img1">
-            <p class="bd__main__text">L'utilisation du marbre travertin et du béton évoque une élégance intemporelle, reflétant la profonde compréhension de
-            Kahn de l'espace et de l'investigation scientifique.</p>
+            <p class="bd__main__text">The use of travertine marble and concrete evokes timeless elegance, reflecting Kahn's deep understanding of space and scientific inquiry.</p>
             <img class="bd__main__img" src="/public/img/img2_bd1.webp" alt="img2">
         </section>
         <section class="bd__conclusion">
-            <h2 class="bd__conclusion__title">Découvertes Inspirantes</h2>
-            <p class="bd__conclusion__text">Au sein de cette merveille architecturale, les chercheurs dialoguent, favorisant des découvertes révolutionnaires en
-            biologie. Le Salk Institute, au-delà de l'excellence architecturale, sert de centre dynamique pour faire progresser
-            notre compréhension des sciences biologiques.</p>
+            <h2 class="bd__conclusion__title">Inspiring Discoveries</h2>
+            <p class="bd__conclusion__text">Within this architectural marvel, researchers engage in dialogue, fostering revolutionary discoveries in biology. The Salk Institute, beyond architectural excellence, serves as a dynamic hub for advancing our understanding of biological sciences.</p>
             <div class="bd__conclusion__carousel" x-data="{hrefCourant: '#ecran-1',}">
                 <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"
                     @click="parent = $refs.parent;parent.scrollLeft -= parent.clientWidth">
@@ -95,18 +89,20 @@
         </section>
     </main>
     <footer class="footer">
-        <h3 class="footer__title">Besoin d'aide?</h3>
+        <h3 class="footer__title">Need help?</h3>
         <span class="footer__line"></span>
         <a class="footer__link" href="/fr/contact.html">
-            <p class="footer__link__text">Contactez-nous</p>
+            <p class="footer__link__text">Contact us</p>
         </a>
         <p class="footer__tel">+33 01 23 45 67</p>
         <a class="footer__mail" href="mailto:expo@gmail.com">expo@gmail.com</a>
-        <h3 class="footer__title">Suivez-nous</h3>
+        <h3 class="footer__title">Follow us</h3>
         <span class="footer__line"></span>
         <div class="footer__socials">
-            <a class="footer__icon" href="#"><img class="footer__icon--img" src="/public/img/Instagram.svg" alt="instagram"></a>
-            <a class="footer__icon" href="#"><img class="footer__icon--img" src="/public/img/Facebook.svg" alt="facebook"></a>
+            <a class="footer__icon" href="#"><img class="footer__icon--img" src="/public/img/Instagram.svg"
+                    alt="instagram"></a>
+            <a class="footer__icon" href="#"><img class="footer__icon--img" src="/public/img/Facebook.svg"
+                    alt="facebook"></a>
             <a class="footer__icon" href="#"><img class="footer__icon--img" src="/public/img/YouTube.svg" alt="youtube"></a>
         </div>
     </footer>
