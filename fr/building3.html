@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musée d'Art Kimbell</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="alternate" hreflang="fr" href="https://sae105.yermakov.fr/fr/building3"/>
+    <link rel="alternate" hreflang="en" href="https://sae105.yermakov.fr/en/building3"/>
+</head>
+
+<body>
+    <header class="header">
+        <button class="header__button" aria-controls="mainNav" @click="menuIsOpen = true">
+            <img src="/public/img/Menu.svg" alt="menu"></button>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+            <button class="menu__button" aria-controls="mainNav" @click="menuIsOpen = false">
+                <img src="/public/img/close.svg" alt="close"></button>
+            <h1 class="menu__title">Menu</h1>
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__item__link" href="/fr/index.html">Accueil</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/fr/expo.html">L'exposition</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/fr/arch.html">Louis Kahn</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/fr/buildings.html">Ses oeuvres</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/fr/contact.html">Contactez-nous</a></li>
+            </ul>
+        </nav>
+        <h1 class="header__title title--bd1">Musée d'Art Kimbell</h1>
+        <img class="header__image" src="/public/img/header_bd1.webp" alt="header">
+    </header>
+    <main>
+        <section class="bd__intro">
+            <p class="bd__intro__text">Niché à Fort Worth, au Texas, le Musée d'Art Kimbell, achevé en 1972, est une merveille architecturale signée du
+            visionnaire Louis Kahn. Malgré son extérieur discret, ce trésor culturel témoigne de la fusion de l'éclat artistique et
+            de l'innovation structurelle, attirant amateurs d'art et passionnés d'architecture.</p>
+        </section>
+        <section class="bd__main">
+            <h2 class="bd__main__title">Harmonie dans la Conception</h2>
+            <p class="bd__main__text">Le génie de Louis Kahn transparaît dans la simplicité et la fonctionnalité du Musée d'Art Kimbell. La structure en deux
+            parties sépare la collection permanente des expositions spéciales, optimisant l'espace d'exposition et contrôlant la
+            lumière naturelle.</p>
+            <img class="bd__main__img" src="/public/img/img1_bd3.webp" alt="img1">
+            <p class="bd__main__text">Les voûtes cycloïdes distinctives, une marque de fabrique du design de Kahn, créent un jeu de lumière captivant dans les
+            galeries. Le musée témoigne de la capacité de Kahn à fusionner l'art, l'architecture et l'expérience humaine.</p>
+            <img class="bd__main__img" src="/public/img/img2_bd3.webp" alt="img2">
+        </section>
+        <section class="bd__conclusion">
+            <h2 class="bd__conclusion__title">Héritage Durable</h2>
+            <p class="bd__conclusion__text">Au-delà de son attrait architectural, le Musée d'Art Kimbell reste un phare d'enrichissement culturel et un héritage
+            vivant des contributions visionnaires de Louis Kahn à la conception moderne des musées.</p>
+            <div class="bd__conclusion__carousel" x-data="{hrefCourant: '#ecran-1',}">
+                <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"
+                    @click="parent = $refs.parent;parent.scrollLeft -= parent.clientWidth">
+                    &lt;
+                </button>
+                <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"
+                    @click="parent = $refs.parent;parent.scrollLeft += parent.clientWidth">
+                    >
+                </button>
+                <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="
+                    hrefCourant = '#'+
+                    [...$refs.parent.children]
+                    .find(e=>e.getBoundingClientRect().x>=0).id">
+                    <div id="ecran-1" class="carrousel_ecran">
+                        <figure>
+                            <img src="/public/img/img1_car_bd3.webp" alt="image_1_carousel">
+                        </figure>
+                    </div>
+                    <div id="ecran-2" class="carrousel_ecran">
+                        <figure>
+                            <img src="/public/img/img2_car_bd3.webp" alt="image_2_carousel">
+                        </figure>
+                    </div>
+                    <div id="ecran-3" class="carrousel_ecran">
+                        <figure>
+                            <img src="/public/img/img3_car_bd3.webp" alt="image_3_carousel">
+                        </figure>
+                    </div>
+                    <div id="ecran-4" class="carrousel_ecran">
+                        <figure>
+                            <img src="/public/img/img4_car_bd4.webp" alt="image_4_carousel">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <h3 class="footer__title">Besoin d'aide?</h3>
+        <span class="footer__line"></span>
+        <a class="footer__link" href="/fr/contact.html">
+            <p class="footer__link__text">Contactez-nous</p>
+        </a>
+        <p class="footer__tel">+33 01 23 45 67</p>
+        <a class="footer__mail" href="mailto:expo@gmail.com">expo@gmail.com</a>
+        <h3 class="footer__title">Suivez-nous</h3>
+        <span class="footer__line"></span>
+        <div class="footer__socials">
+            <a class="footer__icon" href="#"><img class="footer__icon--img" src="/public/img/Instagram.svg"
+                    alt="instagram"></a>
+            <a class="footer__icon" href="#"><img class="footer__icon--img" src="/public/img/Facebook.svg"
+                    alt="facebook"></a>
+            <a class="footer__icon" href="#"><img class="footer__icon--img" src="/public/img/YouTube.svg"
+                    alt="youtube"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
