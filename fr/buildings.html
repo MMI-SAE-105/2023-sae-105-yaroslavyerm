@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ses oeuvres</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs"></script>
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="alternate" hreflang="fr" href="https://sae105.yermakov.fr/fr/buildings" />
@@ -55,59 +56,103 @@
         </section>
         <section class="buildings__timeline">
             <h2 class="buildings__timeline__title">Chronologie de ses œuvres</h2>
-            <ul class="buildings__timeline__list">
-                <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1935</strong> – Jersey Homesteads Cooperative Development</p></li>
-                <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1940</strong> – Jesse Oser House</p></li>
-                <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1944</strong> – Carver Court</p></li>
-                <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1947</strong> – Phillip Q. Roche House</p></li>
-                <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1950</strong> – Morton and Lenore Weiss House</p></li>
-                <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1951</strong> – Yale University Art Gallery</p></li>
-                <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1952</strong> – City Tower Project</p></li>
-                <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1954</strong> – Jewish Community Center</p></li>
-                <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1956</strong> – Wharton Esherick Studio</p></li>
+            <div class="buildings__timeline__container" x-data="{listOpen: 0}">
+                <div>
+                    <button aria-controls="button_1"
+                    @click="listOpen = 1"
+                    class="buildings__timeline__button"
+                    :class="{open: listOpen === 1}"
+                    >
+                        1930s-1940s
+                    </button>
+                    <ul id="button_1"
+                    x-show="listOpen === 1"
+                    x-collapse
+                    class="buildings__timeline__list">
+                        <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1935</strong> – Jersey Homesteads Cooperative Development</p></li>
+                        <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1940</strong> – Jesse Oser House</p></li>
+                        <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1944</strong> – Carver Court</p></li>
+                        <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1947</strong> – Phillip Q. Roche House</p></li>
+                    </ul>
+                </div>
+                <div>
+                    <button aria-controls="button_2" @click="listOpen = 2" class="buildings__timeline__button"
+                    :class="{open: listOpen === 2}">
+                    1950s
+                    </button>
+                    <ul id="button_2"
+                    x-show="listOpen === 2"
+                    x-collapse
+                    class="buildings__timeline__list">
+                        <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1950</strong> – Morton and Lenore Weiss House</p></li>
+                        <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1951</strong> – Yale University Art Gallery</p></li>
+                        <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1952</strong> – City Tower Project</p></li>
+                        <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1954</strong> – Jewish Community Center</p></li>
+                        <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1956</strong> – Wharton Esherick Studio</p></li>
 
-                <li class="buildings__timeline__item">
-                    <p class="buildings__timeline__text"><strong>1957</strong> – Richards Medical Research Laboratories</p>
-                    <p class="buildings__timeline__text">Fred E. and Elaine Cox Clever House</p>
-                </li>
+                        <li class="buildings__timeline__item">
+                            <p class="buildings__timeline__text"><strong>1957</strong> – Richards Medical Research Laboratories</p>
+                            <p class="buildings__timeline__text">Fred E. and Elaine Cox Clever House</p>
+                        </li>
 
-                <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1958</strong> – Tribune Review Publishing Company Building</p></li>
+                        <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1958</strong> – Tribune Review Publishing Company Building</p></li>
 
-                <li class="buildings__timeline__item">
-                    <p class="buildings__timeline__text"><strong>1959</strong> – Margaret Esherick House</p>
-                    <p class="buildings__timeline__text">Salk Institute for Biological Studies</p>
-                    <p class="buildings__timeline__text">First Unitarian Church</p>
-                </li>
+                        <li class="buildings__timeline__item">
+                            <p class="buildings__timeline__text"><strong>1959</strong> – Margaret Esherick House</p>
+                            <p class="buildings__timeline__text">Salk Institute for Biological Studies</p>
+                            <p class="buildings__timeline__text">First Unitarian Church</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <button aria-controls="button_3" @click="listOpen = 3" class="buildings__timeline__button">
+                    1960s
+                    </button>
+                    <ul id="button_3"
+                    x-show="listOpen === 3"
+                    x-collapse
+                    class="buildings__timeline__list">
+                        <li class="buildings__timeline__item">
+                            <p class="buildings__timeline__text"><strong>1960</strong> – Erdman Hall Dormitories</p>
+                            <p class="buildings__timeline__text">Norman Fisher House</p>
+                        </li>
 
-                <li class="buildings__timeline__item">
-                    <p class="buildings__timeline__text"><strong>1960</strong> – Erdman Hall Dormitories</p>
-                    <p class="buildings__timeline__text">Norman Fisher House</p>
-                </li>
+                        <li class="buildings__timeline__item">
+                            <p class="buildings__timeline__text"><strong>1961</strong> – Point Counterpoint</p>
+                            <p class="buildings__timeline__text">Philadelphia's Mikveh Israel</p>
+                            <p class="buildings__timeline__text">Indian Institute of Management</p>
+                        </li>
 
-                <li class="buildings__timeline__item">
-                    <p class="buildings__timeline__text"><strong>1961</strong> – Point Counterpoint</p>
-                    <p class="buildings__timeline__text">Philadelphia's Mikveh Israel</p>
-                    <p class="buildings__timeline__text">Indian Institute of Management</p>
-                </li>
+                        <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1962</strong> – Jatiyo Sangshad Bhaban</p></li>
+                        <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1963</strong> – President's Estate</p></li>
+                        <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1965</strong> – Phillips Exeter Academy Dining Hall</p></li>
 
-                <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1962</strong> – Jatiyo Sangshad Bhaban</p></li>
-                <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1963</strong> – President's Estate</p></li>
-                <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1965</strong> – Phillips Exeter Academy Dining Hall</p></li>
+                        <li class="buildings__timeline__item">
+                            <p class="buildings__timeline__text"><strong>1966</strong> – Kimbell Art Museum</p>
+                            <p class="buildings__timeline__text">Olivetti-Underwood Factory</p>
+                            <p class="buildings__timeline__text">Temple Beth El of Northern Westchester</p>
+                        </li>
 
-                <li class="buildings__timeline__item">
-                    <p class="buildings__timeline__text"><strong>1966</strong> – Kimbell Art Museum</p>
-                    <p class="buildings__timeline__text">Olivetti-Underwood Factory</p>
-                    <p class="buildings__timeline__text">Temple Beth El of Northern Westchester</p>
-                </li>
-
-                <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1968</strong> – Hurva Synagogue</p></li>
-                <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1969</strong> – Yale Center for British Art</p></li>
-                <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1971</strong> – Steven Korman House</p></li>
-                <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1973</strong> – Arts United Center</p></li>
-                <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1974</strong> – Franklin D. Roosevelt Four Freedoms Park</p></li>
-                <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1976</strong> – Point Counterpoint II</p></li>
-                <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1979</strong> – Flora Lamson Hewlett Library</p></li>
-                
+                        <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1968</strong> – Hurva Synagogue</p></li>
+                        <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1969</strong> – Yale Center for British Art</p></li>
+                    </ul>
+                </div>  
+                <div>
+                    <button aria-controls="button_4" @click="listOpen = 4" class="buildings__timeline__button">
+                        1970s
+                    </button>
+                    <ul id="button_4"
+                    x-show="listOpen === 4"
+                    x-collapse
+                    class="buildings__timeline__list">    
+                        <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1971</strong> – Steven Korman House</p></li>
+                        <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1973</strong> – Arts United Center</p></li>
+                        <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1974</strong> – Franklin D. Roosevelt Four Freedoms Park</p></li>
+                        <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1976</strong> – Point Counterpoint II</p></li>
+                        <li class="buildings__timeline__item"> <p class="buildings__timeline__text"><strong>1979</strong> – Flora Lamson Hewlett Library</p></li>
+                    </ul>
+                </div>   
+            </div>   
         </section>
     </main>
     <footer class="footer">
