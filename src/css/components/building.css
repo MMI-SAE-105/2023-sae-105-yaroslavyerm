@@ -1,40 +1,40 @@
-.bd1__intro{
+.bd__intro{
     background-color: var(--charcoal);
 }
 
-.bd1__intro__text{
+.bd__intro__text{
     margin: 0 25px;
 }
 
-.bd1__main{
+.bd__main{
     background-color: var(--brick);
 }
 
-.bd1__main__title{
+.bd__main__title{
     margin: 0 25px;
     color: var(--smoke);
 }
 
-.bd1__main__text{
+.bd__main__text{
     margin: 20px 25px;
     color: var(--smoke);
 }
 
-.bd1__main__img{
+.bd__main__img{
     width: 100%;
     height: 100%;
 }
 
-.bd1__conlusion{
+.bd__conlusion{
     background-color: var(--smoke);
 }
 
-.bd1__conclusion__title{
+.bd__conclusion__title{
     margin: 0 25px;
     color: var(--charcoal);
 }
 
-.bd1__conclusion__text{
+.bd__conclusion__text{
     margin: 20px 25px;
     color: var(--charcoal);
 }
