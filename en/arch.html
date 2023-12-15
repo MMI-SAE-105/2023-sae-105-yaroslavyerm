@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louis Kahn</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="alternate" hreflang="fr" href="https://sae105.yermakov.fr/fr/arch" />
+    <link rel="alternate" hreflang="en" href="https://sae105.yermakov.fr/en/arch" />
+</head>
+
+<body>
+    <header class="header">
+        <button class="header__button" aria-controls="mainNav" @click="menuIsOpen = true">
+            <img src="/public/img/Menu.svg" alt="menu"></button>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+            <button class="menu__button" aria-controls="mainNav" @click="menuIsOpen = false">
+                <img src="/public/img/close.svg" alt="close"></button>
+            <h1 class="menu__title">Menu</h1>
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__item__link" href="/fr/index.html">Accueil</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/fr/expo.html">L'exposition</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/fr/arch.html">Louis Kahn</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/fr/buildings.html">Ses oeuvres</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/fr/contact.html">Contactez-nous</a></li>
+            </ul>
+            <div class="menu__lang">
+                <a class="menu__lang--active" href="/en/arch.html">English</a>
+                <a class="menu__lang--inactive" href="/fr/arch.html">Français</a>
+            </div>
+        </nav>
+        <h1 class="header__title">L'exposition</h1>
+        <img class="header__image" src="/public/img/header_arch.webp" alt="header">
+    </header>
+    <main>
+        <section class="arch__intro">
+            <p class="arch__intro__text">Louis I. Kahn, figure énigmatique mais vénérée dans le domaine de l'architecture, reste une source d'inspiration pour
+            des générations d'architectes et d'enthousiastes du design. Ses œuvres, caractérisées par leur simplicité, leur élégance
+            et leur connexion profonde à la lumière, ont laissé une empreinte indélébile sur le paysage urbain.</p>
+        </section>
+        <section class="arch__estonie">
+            <h2 class="arch__estonie__title">De l'Estonie à la Renommée Architecturale</h2>
+            <p class="arch__estonie__text">Né Itze-Leib Schmuilowsky en Estonie en 1901, Kahn a émigré aux États-Unis dans son enfance et a entamé un parcours
+            architectural qui redéfinirait les limites du design moderne. Ses premières œuvres, influencées par les mouvements
+            modernistes européens, ont mis en avant son vif intérêt pour les formes géométriques et l'esthétique fonctionnelle.</p>
+            <img class="arch__estonie__image" src="/public/img/img1_arch.webp" alt="architect">
+        </section>
+        <section class="arch__yale">
+            <h2 class="arch__yale__title">Des Percées Audacieuses et une Harmonie Spatiale</h2>
+            <p class="arch__yale__text">La percée de Kahn est survenue dans les années 1950 avec la réalisation de projets emblématiques tels que la galerie
+            d'art de l'Université Yale et l'Institut Salk pour les études biologiques. Ces structures, imprégnées de son audace
+            distinctive et de son harmonie spatiale, l'ont établi comme un architecte de premier plan de son époque.</p>
+            <img class="arch__yale__image" src="/public/img/img2_arch.webp" alt="yale">
+        </section>
+        <section class="arch__light">
+            <h2 class="arch__light__title">La Lumière comme Force Directrice</h2>
+            <p class="arch__light__text">La compréhension profonde de Kahn de la lumière et de son interaction avec l'architecture est devenue une
+            caractéristique de ses conceptions. Il manipulait méticuleusement la lumière naturelle pour accentuer les formes
+            architecturales et créer un sentiment d'émerveillement et de transcendance spirituelle au sein de ses bâtiments.</p>
+            <img class="arch__light__image" src="/public/img/img3_arch.webp" alt="light">
+        </section>
+        <section class="arch__legacy">
+            <h2 class="arch__legacy__title">Un Héritage Inspirant</h2>
+            <p class="arch__legacy__text">Le legs de Louis I. Kahn va au-delà de ses œuvres physiques. Son approche philosophique de l'architecture, mettant
+            l'accent sur l'expérience humaine et la connexion entre l'architecture et le monde naturel, continue d'inspirer des
+            architectes et des enthousiastes du design dans le monde entier.</p>
+        </section>
+        <section class="arch__discover">
+            <h2 class="arch__discover__title">Découvrir ses œuvres</h2>
+            <img class="arch__discover__img" src="/public/img/bd_home.webp" alt="building">
+            <a class="arch__discover__link" href="/fr/buildings.html">
+                <p class="arch__discover__link__text">En savoir plus</p> <img
+                    class="arrow" src="/public/img/Arrow.svg" alt="arrow">
+            </a>
+        </section>
+    </main>
+    <footer class="footer">
+        <h3 class="footer__title">Besoin d'aide?</h3>
+        <span class="footer__line"></span>
+        <a class="footer__link" href="/fr/contact.html">
+            <p class="footer__link__text">Contactez-nous</p>
+        </a>
+        <p class="footer__tel">+33 01 23 45 67</p>
+        <a class="footer__mail" href="mailto:expo@gmail.com">expo@gmail.com</a>
+        <h3 class="footer__title">Suivez-nous</h3>
+        <span class="footer__line"></span>
+        <div class="footer__socials">
+            <a class="footer__icon" href="#"><img class="footer__icon--img" src="/public/img/Instagram.svg" alt="instagram"></a>
+            <a class="footer__icon" href="#"><img class="footer__icon--img" src="/public/img/Facebook.svg" alt="facebook"></a>
+            <a class="footer__icon" href="#"><img class="footer__icon--img" src="/public/img/YouTube.svg" alt="youtube"></a>
+        </div>
+    </footer>
+</body>
+
+</html>

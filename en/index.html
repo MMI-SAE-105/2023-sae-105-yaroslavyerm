@@ -1,14 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kahn : Forme et Fonction</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="/src/css/style.css">
     <link rel="alternate" hreflang="fr" href="https://sae105.yermakov.fr/fr/" />
     <link rel="alternate" hreflang="en" href="https://sae105.yermakov.fr/en/" />
 </head>
 <body>
-    
+    <header class="header">
+        <button class="header__button" aria-controls="mainNav" @click="menuIsOpen = true">
+            <img src="/public/img/Menu.svg" alt="menu"></button>
+        <nav id="mainNav" 
+        x-show="menuIsOpen" 
+        x-transition.duration.800ms
+        class="menu">
+            <button class="menu__button" aria-controls="mainNav" @click="menuIsOpen = false">
+                <img src="/public/img/close.svg" alt="close"></button>
+            <h1 class="menu__title">Menu</h1>
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__item__link" href="/fr/index.html">Home</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/fr/expo.html">Exposition</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/fr/arch.html">Louis Kahn</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/fr/buildings.html">His works</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/fr/contact.html">Contact us</a></li>
+            </ul>
+            <div class="menu__lang">
+            <a class="menu__lang--inactive" href="/en/index.html">English</a>
+            <a class="menu__lang--active" href="/fr/index.html">Français</a>
+            </div>
+        </nav>
+        <h1 class="header__title--home">Kahn: Form and Function</h1>
+        <img class="header__image--home" src="/public/img/picture_header.webp" alt="header">
+    </header>
+    <main class="main main--home">
+        <section class="section__home expo">
+            <h2 class="section__home__title expo__title">Discover heritage</h2>
+            <p class="section__home__text expo__text">Explore the innovative architecture and visionary designs
+                of Louis Kahn at our exhibition. Embark on a journey through the life and work of this influential architect,
+                whose timeless creations continue to shape the world of modern architecture.</p>
+            <img class="section__home__img expo__img" src="/public/img/expo_home.webp" alt="exposition">
+            <a class="section__home__link expo__link" href="/fr/expo.html">
+                <p class="section__home__link__text expo__link__text">Learn more</p> <img class="arrow" src="/public/img/Arrow.svg" alt="arrow">
+            </a>
+        </section>
+        <section class="section__home arch">
+            <h2 class="section__home__title arch__title">Demystifying the Genius</h2>
+            <p class="section__home__text arch__text">Dive into the life and philosophy of Louis Kahn,
+                master of form and function. Discover the man behind the iconic structures, his inspirations,
+                and the principles that guided his innovative approach to architecture.</p>
+            <img class="section__home__img arch__img" src="/public/img/arch_home.webp" alt="arhitect">
+            <a class="section__home__link arch__link" href="/fr/arch.html">
+                <p class="section__home__link__text arch__link__text">Learn more</p> <img class="arrow" src="/public/img/Arrow.svg" alt="arrow">
+            </a>
+        </section>
+        <section class="section__home building">
+            <h2 class="section__home__title building__title">Iconic creations</h2>
+            <p class="section__home__text building__text">Discover the impressive works that define
+                the brilliance of Louis Kahn. From the Salk Institute to
+                the National Assembly Building in Bangladesh,
+                explore the portfolio of structures that showcase
+                his mastery of design, materials, and space.</p>
+            <img class="section__home__img building__img" src="/public/img/bd_home.webp" alt="building">
+            <a class="section__home__link building__link" href="/fr/buildings.html">
+                <p class="section__home__link__text building__link__text">Learn more</p> <img class="arrow building__link__arrow" src="/public/img/Arrow_black.svg" alt="arrow">
+            </a>
+        </section>
+    </main>
+    <footer class="footer">
+        <h3 class="footer__title">Need help?</h3>
+        <span class="footer__line"></span>
+        <a class="footer__link" href="/fr/contact.html">
+            <p class="footer__link__text">Contact us</p>
+        </a>
+        <p class="footer__tel">+33 01 23 45 67</p>
+        <a class="footer__mail" href="mailto:expo@gmail.com">expo@gmail.com</a>
+        <h3 class="footer__title">Follow us</h3>
+        <span class="footer__line"></span>
+        <div class="footer__socials">
+        <a class="footer__icon" href="#"><img class="footer__icon--img" src="/public/img/Instagram.svg" alt="instagram"></a>
+        <a class="footer__icon" href="#"><img class="footer__icon--img" src="/public/img/Facebook.svg" alt="facebook"></a>
+        <a class="footer__icon" href="#"><img class="footer__icon--img" src="/public/img/YouTube.svg" alt="youtube"></a>
+        </div>
+    </footer>
 </body>
 </html>
