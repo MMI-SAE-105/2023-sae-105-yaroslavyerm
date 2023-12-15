@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Église unitarienne de Rochester</title>
+    <title>Unitarian Church of Rochester</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="alternate" hreflang="fr" href="https://sae105.yermakov.fr/fr/building7" />
@@ -20,41 +20,35 @@
                 <img src="/public/img/close.svg" alt="close"></button>
             <h1 class="menu__title">Menu</h1>
             <ul class="menu__list">
-                <li class="menu__item"><a class="menu__item__link" href="/fr/index.html">Accueil</a></li>
-                <li class="menu__item"><a class="menu__item__link" href="/fr/expo.html">L'exposition</a></li>
-                <li class="menu__item"><a class="menu__item__link" href="/fr/arch.html">Louis Kahn</a></li>
-                <li class="menu__item"><a class="menu__item__link" href="/fr/buildings.html">Ses oeuvres</a></li>
-                <li class="menu__item"><a class="menu__item__link" href="/fr/contact.html">Contactez-nous</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/en/index.html">Home</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/en/expo.html">Exposition</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/en/arch.html">Louis Kahn</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/en/buildings.html">His works</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/en/contact.html">Contact us</a></li>
             </ul>
             <div class="menu__lang">
-                <a class="menu__lang--active" href="/en/building7.html">English</a>
-                <a class="menu__lang--inactive" href="/fr/building7.html">Français</a>
+                <a class="menu__lang--inactive" href="/en/index.html">English</a>
+                <a class="menu__lang--active" href="/fr/index.html">Français</a>
             </div>
         </nav>
-        <h1 class="header__title title--bd1">Église unitarienne de Rochester</h1>
-        <img class="header__image" src="/public/img/header_bd7.webp" alt="header">
+        <h1 class="header__title--home">Unitarian Church of Rochester</h1>
+        <img class="header__image--home" src="/public/img/picture_header.webp" alt="header">
     </header>
     <main>
         <section class="bd__intro">
-            <p class="bd__intro__text">Érigée en 1961 à Rochester, Indiana, l'Église unitarienne rayonne en tant que phare spirituel, incarnant l'éthos de son
-            temps. Conçue par l'architecte visionnaire Louis Kahn, cette église emblématique marie subtilement signification
-            spirituelle et génie architectural, attirant fidèles et passionnés d'architecture.</p>
+            <p class="bd__intro__text">Built in 1961 in Rochester, Indiana, the Unitarian Church shines as a spiritual beacon, embodying the ethos of its time.
+            Designed by visionary architect Louis Kahn, this iconic church subtly combines spiritual significance and architectural genius, attracting worshippers and architecture enthusiasts.</p>
         </section>
         <section class="bd__main">
-            <h2 class="bd__main__title">Harmonie intentionnelle</h2>
-            <p class="bd__main__text">La vision de Louis Kahn pour l'Église unitarienne de Rochester embrasse une harmonie intentionnelle transcendant la
-            simple fonctionnalité. La structure épurée du bâtiment reflète l'engagement de Kahn envers la révérence spirituelle et
-            la fonctionnalité pratique.</p>
+            <h2 class="bd__main__title">Intentional Harmony</h2>
+            <p class="bd__main__text">Louis Kahn's vision for the Unitarian Church of Rochester embraces intentional harmony that transcends mere functionality. The building's clean structure reflects Kahn's commitment to spiritual reverence and practical functionality.</p>
             <img class="bd__main__img" src="/public/img/img1_bd7.webp" alt="img1">
-            <p class="bd__main__text">Le jeu de lumière naturelle et l'agencement délibéré créent une atmosphère sereine, en faisant un lieu vénéré pour le
-            culte.</p>
+            <p class="bd__main__text">The play of natural light and deliberate arrangement create a serene atmosphere, making it a revered place for worship.</p>
             <img class="bd__main__img" src="/public/img/img2_bd7.webp" alt="img2">
         </section>
         <section class="bd__conclusion">
-            <h2 class="bd__conclusion__title">Signification spirituelle</h2>
-            <p class="bd__conclusion__text">Au-delà de son attrait architectural, l'église revêt une profonde signification spirituelle, servant de sanctuaire pour
-            la réflexion et le culte communautaire. Elle témoigne de la capacité de Louis Kahn à créer des espaces enrichissant
-            l'expérience spirituelle et communautaire pour les générations à venir.</p>
+            <h2 class="bd__conclusion__title">Spiritual Significance</h2>
+            <p class="bd__conclusion__text">Beyond its architectural appeal, the church holds deep spiritual significance, serving as a sanctuary for reflection and communal worship. It testifies to Louis Kahn's ability to create spaces that enrich the spiritual and communal experience for future generations.</p>
             <div class="bd__conclusion__carousel" x-data="{hrefCourant: '#ecran-1',}">
                 <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"
                     @click="parent = $refs.parent;parent.scrollLeft -= parent.clientWidth">
@@ -98,22 +92,21 @@
         </section>
     </main>
     <footer class="footer">
-        <h3 class="footer__title">Besoin d'aide?</h3>
+        <h3 class="footer__title">Need help?</h3>
         <span class="footer__line"></span>
         <a class="footer__link" href="/fr/contact.html">
-            <p class="footer__link__text">Contactez-nous</p>
+            <p class="footer__link__text">Contact us</p>
         </a>
         <p class="footer__tel">+33 01 23 45 67</p>
         <a class="footer__mail" href="mailto:expo@gmail.com">expo@gmail.com</a>
-        <h3 class="footer__title">Suivez-nous</h3>
+        <h3 class="footer__title">Follow us</h3>
         <span class="footer__line"></span>
         <div class="footer__socials">
             <a class="footer__icon" href="#"><img class="footer__icon--img" src="/public/img/Instagram.svg"
                     alt="instagram"></a>
             <a class="footer__icon" href="#"><img class="footer__icon--img" src="/public/img/Facebook.svg"
                     alt="facebook"></a>
-            <a class="footer__icon" href="#"><img class="footer__icon--img" src="/public/img/YouTube.svg"
-                    alt="youtube"></a>
+            <a class="footer__icon" href="#"><img class="footer__icon--img" src="/public/img/YouTube.svg" alt="youtube"></a>
         </div>
     </footer>
 </body>

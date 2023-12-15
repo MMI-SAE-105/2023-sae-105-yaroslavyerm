@@ -20,44 +20,36 @@
                 <img src="/public/img/close.svg" alt="close"></button>
             <h1 class="menu__title">Menu</h1>
             <ul class="menu__list">
-                <li class="menu__item"><a class="menu__item__link" href="/fr/index.html">Accueil</a></li>
-                <li class="menu__item"><a class="menu__item__link" href="/fr/expo.html">L'exposition</a></li>
-                <li class="menu__item"><a class="menu__item__link" href="/fr/arch.html">Louis Kahn</a></li>
-                <li class="menu__item"><a class="menu__item__link" href="/fr/buildings.html">Ses oeuvres</a></li>
-                <li class="menu__item"><a class="menu__item__link" href="/fr/contact.html">Contactez-nous</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/en/index.html">Home</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/en/expo.html">Exposition</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/en/arch.html">Louis Kahn</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/en/buildings.html">His works</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/en/contact.html">Contact us</a></li>
             </ul>
             <div class="menu__lang">
-                <a class="menu__lang--active" href="/en/building6.html">English</a>
-                <a class="menu__lang--inactive" href="/fr/building6.html">Français</a>
+                <a class="menu__lang--inactive" href="/en/index.html">English</a>
+                <a class="menu__lang--active" href="/fr/index.html">Français</a>
             </div>
         </nav>
-        <h1 class="header__title title--bd1">Yale University Art Gallery</h1>
-        <img class="header__image" src="/public/img/header_bd6.webp" alt="header">
+        <h1 class="header__title--home">Yale University Art Gallery</h1>
+        <img class="header__image--home" src="/public/img/picture_header.webp" alt="header">
     </header>
     <main>
         <section class="bd__intro">
-            <p class="bd__intro__text">Nichée à New Haven, Connecticut, la Yale University Art Gallery, établie en 1953, se présente comme un trésor culturel
-            incarnant l'esprit de son époque. Conçue par le visionnaire architecte Louis Kahn, cette galerie emblématique mêle avec
-            élégance magnificence artistique et ingéniosité fonctionnelle, captivant tant les amateurs d'art que les admirateurs
-            d'architecture.</p>
+            <p class="bd__intro__text">Nestled in New Haven, Connecticut, the Yale University Art Gallery, established in 1953, stands as a cultural treasure
+            embodying the spirit of its time. Designed by visionary architect Louis Kahn, this iconic gallery elegantly combines artistic
+            magnificence and functional ingenuity, captivating art enthusiasts and architecture admirers alike.</p>
         </section>
         <section class="bd__main">
-            <h2 class="bd__main__title">Harmonie dans la Conception</h2>
-            <p class="bd__main__text">La vision de Louis Kahn pour la Yale University Art Gallery embrasse l'harmonie et la fonctionnalité. Le design du
-            bâtiment, avec ses lignes épurées et son utilisation réfléchie de l'espace, reflète l'engagement de Kahn envers la
-            beauté esthétique et la fonctionnalité pratique.</p>
+            <h2 class="bd__main__title">Harmony in Design</h2>
+            <p class="bd__main__text">Louis Kahn's vision for the Yale University Art Gallery embraces harmony and functionality. The building's design, with its clean lines and thoughtful use of space, reflects Kahn's commitment to both aesthetic beauty and practical functionality.</p>
             <img class="bd__main__img" src="/public/img/img1_bd6.webp" alt="img1">
-            <p class="bd__main__text">Le jeu de lumière naturelle dans les galeries et l'agencement
-            stratégique des œuvres créent une atmosphère immersive et contemplative, faisant de cet espace un lieu vénéré pour
-            l'appréciation artistique.</p>
+            <p class="bd__main__text">The play of natural light in the galleries and the strategic arrangement of the artworks create an immersive and contemplative atmosphere, making this space a revered place for artistic appreciation.</p>
             <img class="bd__main__img" src="/public/img/img2_bd6.webp" alt="img2">
         </section>
         <section class="bd__conclusion">
-            <h2 class="bd__conclusion__title">Signification Culturelle</h2>
-            <p class="bd__conclusion__text">Au-delà de son attrait architectural, la Yale University Art Gallery revêt une immense importance culturelle. Elle sert
-            de refuge pour l'exploration et l'expression artistiques, favorisant un environnement dynamique pour les étudiants, les
-            chercheurs et les visiteurs. La galerie témoigne de la capacité de Louis Kahn à concevoir des espaces qui mettent en
-            valeur l'art tout en élevant l'expérience culturelle et éducative pour les générations à venir.</p>
+            <h2 class="bd__conclusion__title">Cultural Significance</h2>
+            <p class="bd__conclusion__text">Beyond its architectural appeal, the Yale University Art Gallery holds immense cultural significance. It serves as a refuge for artistic exploration and expression, fostering a dynamic environment for students, researchers, and visitors. The gallery showcases Louis Kahn's ability to design spaces that highlight art while elevating the cultural and educational experience for future generations.</p>
             <div class="bd__conclusion__carousel" x-data="{hrefCourant: '#ecran-1',}">
                 <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"
                     @click="parent = $refs.parent;parent.scrollLeft -= parent.clientWidth">
@@ -101,22 +93,21 @@
         </section>
     </main>
     <footer class="footer">
-        <h3 class="footer__title">Besoin d'aide?</h3>
+        <h3 class="footer__title">Need help?</h3>
         <span class="footer__line"></span>
         <a class="footer__link" href="/fr/contact.html">
-            <p class="footer__link__text">Contactez-nous</p>
+            <p class="footer__link__text">Contact us</p>
         </a>
         <p class="footer__tel">+33 01 23 45 67</p>
         <a class="footer__mail" href="mailto:expo@gmail.com">expo@gmail.com</a>
-        <h3 class="footer__title">Suivez-nous</h3>
+        <h3 class="footer__title">Follow us</h3>
         <span class="footer__line"></span>
         <div class="footer__socials">
             <a class="footer__icon" href="#"><img class="footer__icon--img" src="/public/img/Instagram.svg"
                     alt="instagram"></a>
             <a class="footer__icon" href="#"><img class="footer__icon--img" src="/public/img/Facebook.svg"
                     alt="facebook"></a>
-            <a class="footer__icon" href="#"><img class="footer__icon--img" src="/public/img/YouTube.svg"
-                    alt="youtube"></a>
+            <a class="footer__icon" href="#"><img class="footer__icon--img" src="/public/img/YouTube.svg" alt="youtube"></a>
         </div>
     </footer>
 </body>
