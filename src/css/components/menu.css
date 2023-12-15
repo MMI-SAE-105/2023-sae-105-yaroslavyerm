@@ -54,7 +54,7 @@
 .menu__lang{
     position: absolute;
     bottom: 0; right: 25px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 .menu__lang--active{
