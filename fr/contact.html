@@ -16,7 +16,7 @@
     <header class="header">
         <button class="header__button" aria-controls="mainNav" @click="menuIsOpen = true">
             <img src="/public/img/Menu.svg" alt="menu"></button>
-        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.900ms x-transition.opacity class="menu">
             <button class="menu__button" aria-controls="mainNav" @click="menuIsOpen = false">
                 <img src="/public/img/close.svg" alt="close"></button>
             <h1 class="menu__title">Menu</h1>
