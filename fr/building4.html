@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auditorium Kresge au MIT</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="alternate" hreflang="fr" href="https://sae105.yermakov.fr/fr/building4" />
+    <link rel="alternate" hreflang="en" href="https://sae105.yermakov.fr/en/building4" />
+</head>
+
+<body>
+    <header class="header">
+        <button class="header__button" aria-controls="mainNav" @click="menuIsOpen = true">
+            <img src="/public/img/Menu.svg" alt="menu"></button>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+            <button class="menu__button" aria-controls="mainNav" @click="menuIsOpen = false">
+                <img src="/public/img/close.svg" alt="close"></button>
+            <h1 class="menu__title">Menu</h1>
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__item__link" href="/fr/index.html">Accueil</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/fr/expo.html">L'exposition</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/fr/arch.html">Louis Kahn</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/fr/buildings.html">Ses oeuvres</a></li>
+                <li class="menu__item"><a class="menu__item__link" href="/fr/contact.html">Contactez-nous</a></li>
+            </ul>
+        </nav>
+        <h1 class="header__title title--bd1">Auditorium Kresge au MIT</h1>
+        <img class="header__image" src="/public/img/header_bd4.webp" alt="header">
+    </header>
+    <main>
+        <section class="bd__intro">
+            <p class="bd__intro__text">Au cœur de Cambridge, Massachusetts, l'Auditorium Kresge au MIT, achevé en 1955, témoigne de l'innovation architecturale
+            du milieu du siècle. Conçu par l'architecte renommé Eero Saarinen, cet édifice emblématique incarne l'esprit de son
+            époque et attire les amateurs d'architecture et de culture.</p>
+        </section>
+        <section class="bd__main">
+            <h2 class="bd__main__title">Élégance dans la Conception</h2>
+            <p class="bd__main__text">La vision d'Eero Saarinen pour l'Auditorium Kresge se caractérise par sa simplicité élégante et son intégration
+            harmonieuse avec le paysage. La ligne de toit sinueuse et l'utilisation novatrice du béton armé créent un impact visuel
+            dynamique.</p>
+            <img class="bd__main__img" src="/public/img/img1_bd4.webp" alt="img1">
+            <p class="bd__main__text">L'auditorium à ciel ouvert offre une connexion fluide entre l'intérieur et l'extérieur, offrant une expérience immersive
+            unique.</p>
+            <img class="bd__main__img" src="/public/img/img2_bd4.webp" alt="img2">
+        </section>
+        <section class="bd__conclusion">
+            <h2 class="bd__conclusion__title">Brillance Acoustique</h2>
+            <p class="bd__conclusion__text">Célébré pour sa brillance acoustique, l'Auditorium Kresge demeure un lieu prisé pour une large gamme de performances.
+            Exemple intemporel de design du milieu du siècle, il reflète le dévouement d'Eero Saarinen à créer des espaces qui
+            inspirent l'émerveillement et l'admiration.</p>
+            <div class="bd__conclusion__carousel" x-data="{hrefCourant: '#ecran-1',}">
+                <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"
+                    @click="parent = $refs.parent;parent.scrollLeft -= parent.clientWidth">
+                    &lt;
+                </button>
+                <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"
+                    @click="parent = $refs.parent;parent.scrollLeft += parent.clientWidth">
+                    >
+                </button>
+                <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="
+                    hrefCourant = '#'+
+                    [...$refs.parent.children]
+                    .find(e=>e.getBoundingClientRect().x>=0).id">
+                    <div id="ecran-1" class="carrousel_ecran">
+                        <figure>
+                            <img src="/public/img/img1_car_bd4.webp" alt="image_1_carousel">
+                        </figure>
+                    </div>
+                    <div id="ecran-2" class="carrousel_ecran">
+                        <figure>
+                            <img src="/public/img/img2_car_bd4.webp" alt="image_2_carousel">
+                        </figure>
+                    </div>
+                    <div id="ecran-3" class="carrousel_ecran">
+                        <figure>
+                            <img src="/public/img/img3_car_bd4.webp" alt="image_3_carousel">
+                        </figure>
+                    </div>
+                    <div id="ecran-4" class="carrousel_ecran">
+                        <figure>
+                            <img src="/public/img/img4_car_bd4.webp" alt="image_4_carousel">
+                        </figure>
+                    </div>
+                    <div id="ecran-5" class="carrousel_ecran">
+                        <figure>
+                            <img src="/public/img/img5_car_bd4.webp" alt="image_5_carousel">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <h3 class="footer__title">Besoin d'aide?</h3>
+        <span class="footer__line"></span>
+        <a class="footer__link" href="/fr/contact.html">
+            <p class="footer__link__text">Contactez-nous</p>
+        </a>
+        <p class="footer__tel">+33 01 23 45 67</p>
+        <a class="footer__mail" href="mailto:expo@gmail.com">expo@gmail.com</a>
+        <h3 class="footer__title">Suivez-nous</h3>
+        <span class="footer__line"></span>
+        <div class="footer__socials">
+            <a class="footer__icon" href="#"><img class="footer__icon--img" src="/public/img/Instagram.svg"
+                    alt="instagram"></a>
+            <a class="footer__icon" href="#"><img class="footer__icon--img" src="/public/img/Facebook.svg"
+                    alt="facebook"></a>
+            <a class="footer__icon" href="#"><img class="footer__icon--img" src="/public/img/YouTube.svg"
+                    alt="youtube"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
