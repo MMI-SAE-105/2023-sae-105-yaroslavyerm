@@ -58,20 +58,21 @@
 }
 
 .menu__lang--active{
-    color: var(--smoke);
-    font-size: var(--texte);
-    font-family: Montserrat, sans-serif;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 5px;
+    color: var(--charcoal);
+        font-size: var(--texte);
+        font-family: Montserrat, sans-serif;
+        font-weight: bold;
+        text-decoration: none;
+        background-color: var(--smoke);
+        border-radius: 5px;
+        padding: 5px;
 }
 .menu__lang--inactive{
-    color: var(--charcoal);
-    font-size: var(--texte);
-    font-family: Montserrat, sans-serif;
-    font-weight: bold;
-    text-decoration: none;
-    background-color: var(--smoke);
-    border-radius: 5px;
-    padding: 5px;
+    color: var(--smoke);
+        font-size: var(--texte);
+        font-family: Montserrat, sans-serif;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 5px;
+    
 }
